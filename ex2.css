@@ -1,0 +1,129 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Large image section */
+.large-image-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.large-image img {
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.small-images-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 80%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: 100px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.slider-arrow {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Reservation form */
+.reservation-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reservation-form label {
+    margin: 5px;
+}
+
+.reservation-form input[type="date"],
+.reservation-form button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.reservation-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Room description */
+.room-description {
+    margin-bottom: 30px;
+}
+
+.room-description h2 {
+    color: #333;
+}
+
+.room-description p {
+    margin-top: 10px;
+}
+
+/* Terms & Conditions */
+.terms-conditions {
+    margin-bottom: 30px;
+}
+
+.terms-conditions h2 {
+    color: #333;
+}
+
+.terms-conditions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.terms-conditions li {
+    margin-bottom: 5px;
+}
+
+.check-mark {
+    margin-right: 5px;
+    color: green;
+}

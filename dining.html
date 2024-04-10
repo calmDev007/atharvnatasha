@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dining at Our Hotel</title>
+<link rel="stylesheet" href="dining.css">
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Our Hotel Dining</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#" class="active">Menu</a></li>
+    <li><a href="#">Reservations</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="menu">
+  <h2>Menu</h2>
+  <div class="menu-items">
+    <!-- Menu items will be dynamically added here -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Our Hotel. All rights reserved.</p>
+</footer>
+
+<script>
+  fetch('/menu')
+    .then(response => response.json())
+    .then(menuItems => {
+      const menuItemsContainer = document.querySelector('.menu-items');
+      menuItems.forEach(item => {
+        const menuItemElement = document.createElement('div');
+        menuItemElement.classList.add('menu-item');
+        menuItemElement.innerHTML = `
+          <h3>${item.name}</h3>
+          <p>${item.price}</p>
+        `;
+        menuItemsContainer.appendChild(menuItemElement);
+      });
+    })
+    .catch(error => console.error('Error fetching menu:', error));
+</script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+
+/**************************************************************************************************************************************************************/
+
+
+.pt-90 {
+    padding-top: 50px;
+  }
+
+
+/*.pt-90 { padding-top: 90px }*/
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+
+.row {
+    --bs-gutter-x: 30px;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media (max-width: 767px)
+.section-title {
+    padding: 0 0 20px;
+}
+.section-title {
+    padding: 0 87px 37px;
+    position: relative;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+p {
+    line-height: 24px;
+    font-size: 15px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+} 
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/*******************************************************************************/
+
+
+@media (min-width: 576px)
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.single-location {
+    margin-bottom: 70px;
+}
+
+.location-image a::before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.location-image a::after {
+    color: rgb(255, 255, 255);
+    content: "";
+    font-family: Material-Design-Iconic-Font;
+    font-size: 48px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    transition: all 0.5s ease 0s;
+}
+
+.location-text {
+    padding-top: 25px;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+
+#inquiryForm {
+    background-color: #ececec;
+    bottom: 0px;
+    font-size: 16px;
+    -webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.33);
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.33);
+    padding: 12px 0 6px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* Ensure columns stack on smaller screens */
+.col-lg-4 {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust width for larger screens */
+    max-width: calc(33.333% - 20px); /* Adjust max width for larger screens */
+    margin-bottom: 20px; /* Add space between columns */
+}
+
+/* Adjust column layout for medium screens */
+@media (max-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 calc(50% - 20px); /* Two columns on medium screens */
+        max-width: calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+
+/* Adjust column layout for small screens */
+@media (max-width: 576px) {
+    .col-lg-4 {
+        flex: 0 0 100%; /* One column on small screens */
+        max-width: 100%; /* One column on small screens */
+    }
+}
+
+.single-location {
+    background-color: #ffffff; /* Set card background color */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.location-image img {
+    width: 100%; /* Make sure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 8px; /* Adjust border radius for top left corner */
+    border-top-right-radius: 8px; /* Adjust border radius for top right corner */
+}
+
+.location-text {
+    padding: 20px; /* Add padding inside cards */
+}
+
+.location-text h3 {
+    margin: 0; /* Remove default margin for headings */
+    font-size: 18px; /* Adjust font size for headings */
+    color: #333333; /* Set text color */
+}
+
+.location-text a {
+    color: #333333; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.location-text a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+
+
+/**************************************************************************************************************************************************************/
+
+
+
+/*****************************************************************************************************************************************************************************************************************************************************/
+
+
+
+.footer-area {
+    color: #f7f7f7;
+  }
+  .footer-widget-area {
+    padding: 60px 0 60px;
+  }
+  .footer-logo > a {
+    display: inline-block;
+  }
+  .footer-logo {
+    margin-bottom: 18px;
+  }
+  .social-icons a {
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    display: inline-block;
+    font-size: 20px;
+    height: 33px;
+    line-height: 31px;
+    margin-right: 13px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 33px;
+  }
+  .social-icons > a:last-child {
+    margin-right: 0;
+  }
+  .social-icons > a:hover {
+    background: #b5876d none repeat scroll 0 0;
+    border-color: #b5876d;
+    color: #ffffff;
+  }
+  .social-icons {
+    margin-top: 43px;
+  }
+  .single-footer-widget > h3 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+  }
+  .footer-list li {
+    margin-bottom: 4px;
+  }
+  .footer-list a {
+    color: #f7f7f7;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .footer-list li a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .footer-list li a:hover {
+    color: #b5876d;
+  }
+  .c-info > span:last-child {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 50px;
+  }
+  .c-info > span:first-child {
+    border: 1px solid #6b6b6b;
+    color: #fff;
+    display: inline-table;
+    font-size: 18px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    width: 33px;
+  }
+  .c-info > span:first-child i {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .c-info {
+    margin-bottom: 17px;
+    overflow: hidden;
+    position: relative;
+  }
+  .c-info:hover > span:first-child {
+    background: #3a3a3a none repeat scroll 0 0;
+  }
+  
+  .instagram-image {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .footer-img a img{
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  .footer-img a{
+      width: 100%;
+  }
+  
+  .footer-img a,
+  .post-img a {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-img a:before,
+  .post-img a:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    content: "";
+  }
+  .footer-img a:hover:before,
+  .post-content:hover a:before {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    visibility: visible;
+  }
+  .footer-img a:after,
+  .post-img a:after {
+    color: #ffffff;
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 22px;
+    left: 50%;
+    margin: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .footer-img a:hover:after,
+  .post-content:hover a:after {
+    opacity: 1;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  .footer-bottom-area {
+    padding: 24px 0;
+  }
+  .footer-text span a {
+    color: #b5876d;
+  }
+  .footer-text span a:hover {
+    border-bottom: 1px solid #b5876d;
+  }
+  .footer-text > span {
+    display: block;
+  }
+  
+
+
+
+
+ 
+.zmdi {
+  /* Add styles common to all Material Design Icons */
+  /* For example: */
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Adjust size as needed */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.zmdi.zmdi-pin {
+  /* Add specific styles for the pin icon */
+  /* For example: */
+  color: #007bff; /* Change color as needed */
+}
+
+
+
+
+/**************************************************************************************************************************************************************/
+
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #3b2b2b;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corner */
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+}
+
+#scrollBtn:hover {
+  background-color: #666666; /* Darker grey on hover */
+}
+
+/**************************************************************************************************************************************************************/
+
+
+2 
+
+    margin-left: 0px;
+    margin-top: 10px;
+3
+
+    margin-top: 10px;

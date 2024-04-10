@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Nestin Resort - About Us</title>
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+  .navbar-dark {
+    background: linear-gradient(to right, black, rgb(74, 43, 18)); /* Change the colors as needed */
+    min-height: 180px; /* Adjust as needed */
+  }
+
+  .navbar-brand img {
+    max-height: 150px; /* Adjust as needed */
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .navbar-divider {
+    width: 100%;
+    border-top: 3px solid white;
+    margin: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    display: block;
+  }
+
+  .navbar-nav {
+    text-align: right;
+  }
+
+  .navbar-nav.ms-auto {
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  /* Added custom CSS */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav-container {
+    margin-left: auto;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+
+
+  #alignR{
+    text-align:right ;
+  }
+
+  .main-wrapper {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .textAlignC {
+      text-align: center;
+    }
+
+    .textAlignJ {
+      text-align: justify;
+    }
+
+    .textupper {
+      text-transform: uppercase;
+    }
+
+    .margin30 {
+      margin: 30px;
+    }
+
+    .marginB_only {
+      margin-top: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    #gap {
+      height: 30px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .title-text {
+      font-family: 'Conv_sylfaen', Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      color: #a3238e;
+      position: relative;
+      display: inline-block;
+    }
+
+    .title-text .underline {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
+
+    .content-primary-text {
+      font-family: 'Conv_sylfaen', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #565656;
+    }
+
+/*****************************************************************************************************************************************************************************************************************************************************/
+/*about us right image css*/
+.main-wrapper {
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+    /* Updated media queries */
+    @media (min-width: 992px) {
+      .main-wrapper {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+      }
+
+      .col-md-8 {
+        flex: 0 0 calc(66.6667% - 20px);
+        max-width: calc(66.6667% - 20px);
+      }
+
+      .col-md-4 {
+        flex: 0 0 calc(33.3333% - 20px);
+        max-width: calc(33.3333% - 20px);
+        margin-left: 20px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .col-md-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    /* Adjusted image size */
+    .image-wrapper {
+      height: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .image-wrapper {
+        height: auto;
+        margin-top: 20px;
+      }
+    }
+
+/*****************************************************************************************************************************************************************************************************************************************************/
+
+.footer-area {
+      clear: both;
+    }
+
+.footer-area {
+    color: #f7f7f7;
+  }
+  .footer-widget-area {
+    padding: 60px 0 60px;
+  }
+  .footer-logo > a {
+    display: inline-block;
+  }
+  .footer-logo {
+    margin-bottom: 18px;
+  }
+  .social-icons a {
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    display: inline-block;
+    font-size: 20px;
+    height: 33px;
+    line-height: 31px;
+    margin-right: 13px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 33px;
+  }
+  .social-icons > a:last-child {
+    margin-right: 0;
+  }
+  .social-icons > a:hover {
+    background: #b5876d none repeat scroll 0 0;
+    border-color: #b5876d;
+    color: #ffffff;
+  }
+  .social-icons {
+    margin-top: 43px;
+  }
+  .single-footer-widget > h3 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+  }
+  .footer-list li {
+    margin-bottom: 4px;
+  }
+  .footer-list a {
+    color: #f7f7f7;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .footer-list li a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .footer-list li a:hover {
+    color: #b5876d;
+  }
+  .c-info > span:last-child {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 50px;
+  }
+  .c-info > span:first-child {
+    border: 1px solid #6b6b6b;
+    color: #fff;
+    display: inline-table;
+    font-size: 18px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    width: 33px;
+  }
+  .c-info > span:first-child i {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .c-info {
+    margin-bottom: 17px;
+    overflow: hidden;
+    position: relative;
+  }
+  .c-info:hover > span:first-child {
+    background: #3a3a3a none repeat scroll 0 0;
+  }
+  
+  .instagram-image {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .footer-img a img{
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  .footer-img a{
+      width: 100%;
+  }
+  
+  .footer-img a,
+  .post-img a {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-img a:before,
+  .post-img a:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    content: "";
+  }
+  .footer-img a:hover:before,
+  .post-content:hover a:before {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    visibility: visible;
+  }
+  .footer-img a:after,
+  .post-img a:after {
+    color: #ffffff;
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 22px;
+    left: 50%;
+    margin: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .footer-img a:hover:after,
+  .post-content:hover a:after {
+    opacity: 1;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  .footer-bottom-area {
+    padding: 24px 0;
+  }
+  .footer-text span a {
+    color: #b5876d;
+  }
+  .footer-text span a:hover {
+    border-bottom: 1px solid #b5876d;
+  }
+  .footer-text > span {
+    display: block;
+  }
+  
+
+
+
+
+ 
+.zmdi {
+  /* Add styles common to all Material Design Icons */
+  /* For example: */
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Adjust size as needed */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.zmdi.zmdi-pin {
+  /* Add specific styles for the pin icon */
+  /* For example: */
+  color: #007bff; /* Change color as needed */
+}
+
+
+
+
+/**************************************************************************************************************************************************************/
+
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #3b2b2b;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corner */
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+}
+
+#scrollBtn:hover {
+  background-color: #666666; /* Darker grey on hover */
+}
+
+/**************************************************************************************************************************************************************/
+</style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <a class="navbar-brand" href="#">
+          <img src="white_hotel_logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="navbar-nav-container" >
+        <div class="navbar-nav me-auto mb-2 mb-lg-0 social-icons" style="justify-content: flex-end;">
+          <!-- First section with 3 links -->
+          <a href="https://www.linkedin.com/in/mahak-agrawal-386259251" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <p>&#32;</p>
+          <a href="https://github.com/Mahak-Agrawal1608" target="_blank"><i class="bi bi-github" ></i></a>
+          <p>&#32;</p>
+          <a href="https://www.instagram.com/oshi.rst" target="_blank"><i class="bi bi-instagram" ></i></a>
+        </div>
+
+        <div class="navbar-divider"></div>
+
+        <div class="navbar-nav" style="justify-content: flex-end;">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="AboutUs.html">About Us</a>
+          <a class="nav-link" href="Accomodation.html">Accommodation</a>
+          <a class="nav-link" href="Dining.html">Dining</a>
+          <a class="nav-link" href="Wedding.html">Weddings</a>
+          <a class="nav-link" href="Experience.html">Experiences</a>
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="gap">
+        
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-- ****************************************************************************************************************************************************************************************************************************************************** -->
+
+
+
+
+
+
+<div class="main-wrapper">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="title">
+                <div class="row title-text textupper margin30 marginB_only">
+                    <span class="relative">
+                        <span class="first-letter">A</span>bout Us
+                    </span>
+                    <span class="underline title-text-border"></span> <!-- Underline here -->
+                </div>
+                <div class="content-primary-text textAlignJ mobile-content">
+        Hotel near Mumbai International Airport. This new age hotel is strategically located near the Mumbai International Airport and a few minutes from the Marol Naka Metro Station. Close to key business and commercial offices on the Andheri Kurla Road, SEEPZ, and the Bombay Exhibition Centre/NESCO, Jio Convention Centre Mumbai. It offers direct access to the Western Express Highway and Powai. The Maharashtra Industrial Development Corporation (MIDC) and Bandra Kurla Complex are also situated nearby.<br><br>
+        This hotel offers 125 plush and well-appointed Executive rooms, Reflection Rooms and Suites, a 24x7 multi-cuisine coffee shop - Magnolia Restaurant - Zebra Lounge Cafe, a hip recreation bar - lounge, an eclectic pan-Asian restaurant - Republic of Noodles besides a - Pulse, a Life Fitness gym &amp; and an upcoming Spa to keep you feeling fresh-as-a-lemon.<br><br>
+        Not far from iconic destinations like Juhu Beach, Siddhivinayak Temple and further onwards to Gateway of India and Chhatrapati Shivaji Terminus, the hotel is within easy reach of Bandra West, the upscale entertainment and hub of Mumbai known for its signature restaurants and bustling nightlife.<br><br>
+        Dressed in neutral hues and vintage-styled art, the hotel wears a nostalgic look accentuated by classic leather sofas, chic interiors and understated decorative lighting. Together with modern facilities, personalized service, and impeccable service standards, it transforms into the perfect place for upbeat business and leisure travelers to interact and to unwind.<br><br>
+        The hotel offers over 880 sq.mtr. of contemporary meeting space, including large conference rooms and a business center, to add that extra zing to your meetings and special events.
+    </div>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="image-wrapper cover">
+                <img src="about.jpg" alt="Main Image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+
+<footer class="footer-area">
+      <!-- Footer Widget Start -->
+      <div class="footer-widget-area bg-dark">
+        <div class="container">
+          <div class="row mb-n60">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="white_hotel_logo.png" alt="Royal Nestin Resort" width="50%"></a>
+                </div>
+                <p>
+                  To make your experience as rich and beautiful as possible, our dedicated team is at your service. So for any queries, special requests or to book your stay at Royal NestIn, please get in touch with us.
+                </p>
+                 <div class="social-icons">
+    <a href="https://www.linkedin.com/in/mahak-agrawal-386259251" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.instagram.com/oshi.rst" target="_blank"><i class="bi bi-instagram" ></i></a>
+  </div>
+              </div>
+            </div>
+            <div class="col-xl-3 offset-lg-1 col-lg-4  col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>contact us</h3>
+                <div class="c-info">
+                  <span><i class="bi bi-geo-alt-fill"></i></span>
+                  <span>Mhow Bypass, Madhya Pradesh 453331</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="bi bi-envelope"></i></span>
+                  <span>en21cs301425@medicaps.ac.in<br>bookings@RNResort.com</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="bi bi-telephone"></i></span>
+                  <span style="margin-bottom:10px;margin-top:10px;">+91 8602347213<br></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="accommodations.html">Accomodations</a></li>
+          <li><a href="dining.html">Dining</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                  <li><a href="weddings.html">Weddings</a></li>
+                  <li><a href="experiences.html">Experiences</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+           <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Footer Widget End -->
+      <!-- Footer Bottom Area Start -->
+      <div class="footer-bottom-area bg-black"> 
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="footer-text text-center">
+                <span>© 2024 <b class="text-white">Royal NestIn Resort</b><span>
+              </span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="topFunction()" id="scrollBtn" title="Go to top">&#8593;</button>
+
+
+
+    
+    </footer>
+    <script type="text/javascript">
+    // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scrollBtn").style.display = "block";
+        } else {
+          document.getElementById("scrollBtn").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+
+
+  </script>
+
+
+
+<!--************************************************************************************************************************************************************************************************************************************************************-->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

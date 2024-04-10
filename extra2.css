@@ -1,0 +1,1080 @@
+
+ .room-details .box-select .select.arrow {
+    width: 100%;
+  }
+
+  .room-details-title {
+    font-size: 22px;
+  }
+  .room-details-text > p {
+    margin-bottom: 10px;
+  }
+  .room-details .single-room.large .hover-text {
+    padding: 0 10px;
+  }
+
+
+
+
+
+
+  .room-details-title {
+  line-height: 18px;
+  margin-bottom: 34px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.room-details-title::after {
+  background: #b5876d none repeat scroll 0 0;
+  bottom: -10px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 90px;
+}
+
+.room-details-text {
+  padding-top: 50px;
+}
+
+.room-details-text > p {
+  margin-bottom: 24px;
+}
+
+
+.room-area .room-details-title {
+  margin-bottom: 40px;
+}
+
+.sidebar-widget .room-details-title {
+  font-size: 18px;
+  margin-bottom: 27px;
+  padding-top: 6px;
+}
+
+.sidebar-widget .room-details-title::after {
+  bottom: -7px;
+}
+
+.room-details .single-room.large .hover-text {
+  padding: 0 80px;
+}
+
+
+
+
+
+  .pt-90 {
+    padding-top: 50px;
+  }
+
+
+
+
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px
+    }
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between
+}
+
+.toast-container {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%;
+    pointer-events: none
+}
+
+.toast-container>:not(:last-child) {
+    margin-bottom: .75rem
+}
+
+
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+.room-area .container-fluid {
+  padding: 0;
+}
+
+
+
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.col {
+    flex: 1 0 0%
+}
+
+.row-cols-auto>* {
+    flex: 0 0 auto;
+    width: auto
+}
+
+.row-cols-1>* {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.row-cols-2>* {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.row-cols-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%
+}
+
+.row-cols-4>* {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.row-cols-5>* {
+    flex: 0 0 auto;
+    width: 20%
+}
+
+.row-cols-6>* {
+    flex: 0 0 auto;
+    width: 16.6666666667%
+}
+
+
+@media (min-width:576px) {
+    .col-sm {
+        flex: 1 0 0%
+    }
+
+    .row-cols-sm-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-sm-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-sm-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-sm-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-sm-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-sm-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-sm-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .col-md {
+        flex: 1 0 0%
+    }
+
+    .row-cols-md-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-md-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-md-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-md-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-md-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-md-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg {
+        flex: 1 0 0%
+    }
+
+    .row-cols-lg-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-lg-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-lg-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-lg-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-lg-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-lg-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-lg-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:1200px) {
+    .col-xl {
+        flex: 1 0 0%
+    }
+
+    .row-cols-xl-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-xl-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-xl-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-xl-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-xl-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-xl-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-xl-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+
+@media (min-width:1400px) {
+    .col-xxl {
+        flex: 1 0 0%
+    }
+
+    .row-cols-xxl-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-xxl-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-xxl-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-xxl-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-xxl-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-xxl-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-xxl-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+
+.col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%
+}
+
+.col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+
+.logo {
+    padding: 24px 0;
+  }
+
+@media (max-width: 767px) {
+  .logo img
+  {
+      width: 70%;
+  }
+}
+
+  .logo {
+    padding: 8px 0;
+    text-align: center;
+  }
+
+
+
+/*All slick items*/
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-track,.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-track:before,.slick-track:after {
+    display: table;
+    content: ''
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir='rtl'] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+
+
+/*slick items end*/
+
+
+
+
+/**********************************************************************************************************************
+ ***********************************************************************************************************************/
+
+
+/*Room page css from style.css starts*/
+
+
+
+.slick-list {
+  padding: 0 !important;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slider-nav .slick-slide {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.nav-row {
+  margin-left: -11px;
+  margin-right: -11px;
+}
+
+.room-slider {
+  margin-bottom: 20px;
+}
+
+.slider-nav {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  padding: 0;
+}
+
+.slick-arrow {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+  border: 0 none;
+  height: 100%;
+  left: 11px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  z-index: 9;
+}
+
+.slick-next {
+  left: auto;
+  right: 9px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #444444;
+  content: "\f2f4";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 48px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s ease 0s;
+  width: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.slick-next:before {
+  content: "\f2f6";
+}
+
+.room-details-title {
+  line-height: 18px;
+  margin-bottom: 34px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.room-details-title::after {
+  background: #b5876d none repeat scroll 0 0;
+  bottom: -10px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 90px;
+}
+
+.room-details-text {
+  padding-top: 50px;
+}
+
+.room-details-text > p {
+  margin-bottom: 24px;
+}
+
+.room-facilities {
+  margin-bottom: 32px;
+  overflow: hidden;
+  padding-top: 22px;
+}
+
+.single-facility > span {
+  display: block;
+  font-family: "raleway";
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.single-facility {
+  float: left;
+  width: 33.3333%;
+}
+
+.single-faciity {
+  padding-top: 1px;
+}
+
+.single-facility span i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.cost > h2,
+.cost span {
+  color: #ffffff;
+}
+
+.cost {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  height: 100px;
+  padding: 20px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 170px;
+}
+
+.cost > span {
+  display: block;
+  font-family: "raleway";
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.zmdi-check {
+  color: #1db000;
+}
+
+.zmdi-close {
+  color: #ff0101;
+}
+
+.room-area .room-details-title {
+  margin-bottom: 40px;
+}
+
+.cost > h2,
+.cost span {
+  color: #ffffff;
+}
+
+.cost {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  height: 100px;
+  padding: 20px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 170px;
+}
+
+.cost > span {
+  display: block;
+  font-family: "raleway";
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.sidebar-widget form.search-form {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-widget .box-select .select {
+  background: #ffffff none repeat scroll 0 0;
+  border-color: #ffffff;
+  margin-bottom: 20px;
+  margin-right: 0;
+  width: 100%;
+}
+
+.sidebar-widget .search-form button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sidebar-widget {
+  background: #f1f1f1 none repeat scroll 0 0;
+  margin-bottom: 50px;
+  padding: 24px 20px 30px;
+}
+
+.sidebar-widget .room-details-title {
+  font-size: 18px;
+  margin-bottom: 27px;
+  padding-top: 6px;
+}
+
+.sidebar-widget .room-details-title::after {
+  bottom: -7px;
+}
+
+.sidebar-widget .c-info > span:first-child {
+  border: 0 none;
+  text-align: left;
+}
+
+.sidebar-widget .c-info:hover > span:first-child {
+  background: transparent;
+  color: #252525;
+}
+
+.sidebar-widget .c-info {
+  margin-bottom: 12px;
+}
+
+.sidebar-widget .c-info-text {
+  margin-bottom: 12px;
+}
+
+.sidebar-widget .c-info:last-child {
+  margin: 0;
+}
+
+.sidebar-widget .c-info > span:last-child {
+  padding-left: 44px;
+}
+
+.post-img > img {
+  max-width: 100%;
+}
+
+.post-img {
+  float: left;
+}
+
+.post-content {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.post-text {
+  overflow: hidden;
+  padding-left: 24px;
+}
+
+.post-text h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 11px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.post-text h4:hover a {
+  color: #b5876d;
+}
+
+.post-text > span {
+  color: #909090;
+  display: block;
+  font-size: 13px;
+}
+
+.post-content:last-child {
+  margin: 0;
+}
+
+.room-details .single-room.large .hover-text {
+  padding: 0 80px;
+}
+
+/*----------------------------------------*/
+/*  14. Location Page
+/*----------------------------------------*/
+.location-image a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-image a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.location-image a:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.location-image a::after {
+  color: #ffffff;
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 48px;
+  left: 50%;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease 0s;
+}
+
+.location-image a:hover::after {
+  opacity: 1;
+}
+
+.location-text > h3 {
+  color: #252525;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 13px;
+  font-size: 24px;
+}
+
+.location-text > h3:hover a {
+  color: #b5876d;
+}
+
+.location-text {
+  padding-top: 25px;
+}
+
+.address-distance > span {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.address-distance > span:first-child {
+  float: left;
+}
+
+.address-distance > span:last-child {
+  float: right;
+}
+
+.single-location {
+  margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Room page css from style.css ends*/
+
+
+
+
+/**********************************************************************************************************************
+ ***********************************************************************************************************************/
+
+
+/*Responsiveness startss*/
+
+  .room-grid .single-room:hover::after {
+    transform: scaleY(0.78);
+  }
+  .room-list img {
+    width: 100%;
+  }
+  /* .room-list-text {padding: 21px 0 16px;} */
+  .event-text > p {
+    width: 59%;
+  }
+  .single-event.small:hover .event-text > p {
+    bottom: 20px;
+  }
+  .banner-content h1 {
+    padding-top: 120px;
+  }
+  .hover-text .room-btn {
+    bottom: 16%;
+  }
+  .single-room:hover .hover-text > h3 {
+    top: 18%;
+  }
+  .hover-text > p {
+    bottom: 32%;
+  }
+  .single-room.large:hover .hover-text > h3 {
+    top: 22%;
+  }
+  .single-room.large .hover-text > p {
+    bottom: 39%;
+  }
+  .single-room.large .hover-text > .room-btn {
+    bottom: 21%;
+  }
+  .room-grid .single-room:hover .hover-text > h3 {
+    top: 25%;
+  }
+  .room-grid .single-room .hover-text .room-btn {
+    bottom: 23%;
+  }
+  .room-grid .single-room .hover-text > p {
+    bottom: 41%;
+    padding: 0;
+  }
+  .room-grid .p-amount {
+    top: 31%;
+  }
+}
+
+
+/**********************************************************************************************************************
+ ***********************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+

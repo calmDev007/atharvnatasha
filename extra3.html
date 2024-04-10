@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management Website</title>
+    <style>
+
+        .container-fluid {
+		    width: 90%;
+		    margin: 0 auto;
+		    padding: 20px 0;
+		}
+
+		.section {
+		    margin-bottom: 20px;
+		}
+
+		.flex-container {
+		    display: flex;
+		    justify-content: space-between;
+		}
+
+		.flex-item {
+		    flex: 1;
+		    height: 200px;
+		    overflow: hidden;
+		    position: relative;
+		}
+
+		.flex-item img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		}
+
+		.form {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    align-items: center;
+		    width: 100%;
+		}
+
+		.form input[type="date"],
+		.form input[type="number"] {
+		    flex-basis: calc(50% - 5px);
+		    margin-bottom: 10px;
+		    padding: 8px;
+		    border: 1px solid #ccc;
+		    border-radius: 5px;
+		    outline: none;
+		}
+
+		.form button {
+		    flex-basis: calc(50% - 5px);
+		    padding: 8px 16px;
+		    border: none;
+		    border-radius: 20px;
+		    cursor: pointer;
+		}
+
+		.card-table {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		    grid-gap: 20px;
+		}
+
+		.card {
+		    background-color: #f9f9f9;
+		    padding: 20px;
+		    border-radius: 10px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.card img {
+		    width: 100%;
+		    height: 200px;
+		    object-fit: cover;
+		    border-radius: 5px;
+		    margin-bottom: 10px;
+		}
+
+		.book-btn {
+		    background-color: #007bff;
+		    color: #fff;
+		    border: none;
+		    padding: 8px 16px;
+		    border-radius: 20px;
+		    cursor: pointer;
+		}
+
+		/* Media Queries for Responsiveness */
+
+		@media screen and (max-width: 768px) {
+		    .flex-item {
+		        height: 150px;
+		    }
+		}
+
+		@media screen and (max-width: 576px) {
+		    .flex-container {
+		        flex-direction: column;
+		    }
+		    .form input[type="date"],
+		    .form input[type="number"],
+		    .form button {
+		        flex-basis: 100%;
+		    }
+		}
+		/* Adjust grid for normal laptop screens */
+		@media screen and (min-width: 992px) {
+		    .card-table {
+		        grid-template-columns: repeat(3, 1fr);
+		    }
+		}
+
+		
+		#my_header {
+		    display:table;
+		    margin:auto; /* if you want header be center in it's parent */
+		}
+		#my_header div {
+		    display:table-cell;
+		}
+
+			
+    </style>
+    <script>
+    	document.addEventListener("DOMContentLoaded", function () {
+		    const cards = document.querySelectorAll(".card");
+
+		    cards.forEach(card => {
+		        const content = card.querySelector("p");
+		        const toggleLink = document.createElement("span");
+		        toggleLink.className = "toggle-link";
+		        toggleLink.textContent = "Read more";
+		        content.parentNode.insertBefore(toggleLink, content.nextSibling);
+
+		        toggleLink.addEventListener("click", function () {
+		            if (content.classList.contains("expanded")) {
+		                content.classList.remove("expanded");
+		                content.innerHTML = content.innerHTML.substring(0, 200) + '...';
+		                toggleLink.textContent = "Read more";
+		            } else {
+		                content.classList.add("expanded");
+		                content.innerHTML = content.dataset.fullContent;
+		                toggleLink.textContent = "Read less";
+		            }
+		        });
+
+		        // Save the full content in a data attribute
+		        content.dataset.fullContent = content.innerHTML;
+
+		        // Truncate content initially
+		        if (content.textContent.length > 200) {
+		            content.innerHTML = content.textContent.substring(0, 200) + '...';
+		            toggleLink.style.display = "inline"; // Show toggle link if content is truncated
+		        }
+		    });
+
+		    // Handling specific cards
+		    const iglooCard = document.querySelector(".card h3:contains('Igloo')").closest(".card");
+		    const birdsNestCard = document.querySelector(".card h3:contains('Birds Nest')").closest(".card");
+
+		    handleSpecialCard(iglooCard);
+		    handleSpecialCard(birdsNestCard);
+
+		    function handleSpecialCard(card) {
+		        const content = card.querySelector("p");
+		        const toggleLink = card.querySelector(".toggle-link");
+
+		        toggleLink.addEventListener("click", function () {
+		            if (content.classList.contains("expanded")) {
+		                content.classList.remove("expanded");
+		                content.innerHTML = content.innerHTML.substring(0, 200) + '...';
+		                toggleLink.textContent = "Read more";
+		            } else {
+		                content.classList.add("expanded");
+		                content.innerHTML = content.dataset.fullContent;
+		                toggleLink.textContent = "Read less";
+		            }
+		        });
+
+		        // Save the full content in a data attribute
+		        content.dataset.fullContent = content.innerHTML;
+
+		        // Truncate content initially
+		        if (content.textContent.length > 200) {
+		            content.innerHTML = content.textContent.substring(0, 200) + '...';
+		            toggleLink.style.display = "inline"; // Show toggle link if content is truncated
+		        }
+		    }
+		});
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="section">
+            <div class="flex-container">
+                <div class="flex-item"><img src="room7.jpg" alt="Image 1"></div>
+                <div class="flex-item"><img src="room8.jpg" alt="Image 2"></div>
+                <div class="flex-item"><img src="room9.jpg" alt="Image 3"></div>
+                <div class="flex-item"><img src="room1.png" alt="Image 4"></div>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="form">
+                <input type="date" id="check-in-date">
+                <input type="date" id="check-out-date">
+                <input type="number" id="adults" placeholder="Adults">
+                <input type="number" id="children" placeholder="Children">
+                <button type="button" class="book-btn">Search</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="card-table">
+                <div class="card">
+                    <img src="luxuryroom1.jpg" alt="Room Image">
+                    <h3>Boho Rooms</h3>
+                    <p>Indulge in Boho bliss at Anchaviyo, where four adjacent rooms create a vibrant haven. Each double-occupancy retreat seamlessly blends comfort with free-spirited elegance. Cherish shared moments in our outdoor seating area, perfect for gathering friends. Experience the Boho magic – where every corner narrates a unique story of togetherness.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 8,500 </strong>per night</p>
+                </div>
+               	<div class="card">
+                    <img src="luxuryroom2.jpg" alt="Room Image">
+                    <h3>Historic Room</h3>
+                    <p>Superiority at its finest! Our Historic Room thrives on demonstrating empathy, self awareness, and social intelligence. With a single, large eye-catching bed and extra space for 2 more occupants, you’ll be seduced by an attractive blend of luxury and mindfulness.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 10,500 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom3.jpg" alt="Room Image">
+                    <h3>Farmers Room</h3>
+                    <p>Howdy Howdy! Here’s your opportunity to live within an agricultural setting and relish a rancher’s landscape at our countryside houses. Our farmer's room comes with fine artwork and a mini windmill on the exterior. On the insides, you’re treated to rustically stunning bricked walls accompanied by purely farm-like vibes owing to the washroom’s and living room’s design.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 10,500 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom4.jpg" alt="Room Image">
+                    <h3>The Little Nell</h3>
+                    <p>This adorable pet-friendly accommodation will treat your lovely canines and felines with a day better than yours! With pet doors, structures, toys, and decorations that any pet resonates with, the Little Nell room could be your pet’s most memorable vacation up to day. Whether they're rolling around, gazing into nature, or running like lively darlings in acres of open space – this one’s for your favourite companions!</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 15,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom5.jpg" alt="Room Image">
+                    <h3>Aram Nest</h3>
+                    <p>Nestled beneath the tranquil skies, Aaram Nest 1 and 2 offer charming countryside retreats. With two rooms, featuring double and bunk beds, these cozy sanctuaries accommodate up to four. Enjoy a picturesque river-facing view, and rest easy knowing these wheelchair-accessible nests welcome all to experience the serene countryside.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 16,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom6.jpg" alt="Room Image">
+                    <h3>A Room</h3>
+                    <p>This A-shaped chalet comes in 2 levels. The lower level occupies the living room, bathroom and a comfortable open-air seating territory, while the upper level has a compact, minimalist room and sleek river view balcony. Even better, the glass windows bolster amplified natural lighting while making a perfect spot for unadulterated views of mother earth.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 18,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom7.jpg" alt="Room Image">
+                    <h3>Geo Desic</h3>
+                    <p>Shaped like a dome from the exteriors and interiors, it must’ve never felt so mystical to live within a sphere with dreamy blue and white imprints on the insides. The hexagon window offers an enticing view of the river and front porch, while the outside pool with a protective shed teleports you to a riverside paradise in a jiffy.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 18,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom8.jpg" alt="Room Image">
+                    <h3>Pyramid Room</h3>
+                    <p>With architectural mastery at its classiest, this overtly spacious Pyramid room and its slanting walls promise you an extraordinarily inspiriting Anchaviyo experience. Oh! There’s another huge surprise in here, literally ‘huge’! Can accommodate two adults, has a swing bed and a bath tub</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 18,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom9.jpg" alt="Room Image">
+                    <h3>Igloo</h3>
+                    <p>Hidden high up in the clouds, far from the hustle and bustle, lies The Igloo - your peaceful abode in the sky. Climb up the winding stairs and make your way to your private oasis of tranquility, with your favourite travel companion. Step out of your Igloo and into the balcony to soak in the mesmerizing panoramic views of green, till as far as the eye can see. Watch the Vaitarna river make its way across the landscape, as you bask in the breeze flowing past over a hot cup of coffee or a cool glass of wine. Climb down to your sprawling bathtub and wash your worries away as you gaze out the French windows. When you are ready, you can also step down into the resort and make the most of all the exciting activities at Anchaviyo.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 19,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom10.jpg" alt="Room Image">
+                    <h3>Birds Nest</h3>
+                    <p>Bird's nest is a unique pair of chalets, inspired by the gorgeous farmhouses of the English Countryside. Both chalets, connected to each other by a bridge on the balcony, are identical in size, dimensions and style. However, it is their gorgeous décor that sets them apart. Each of the two chalets is spread over two levels and accommodates two. On the first level, lie a beautiful, cozy seating area, a large bathroom and a staircase leading upwards. But that's not all. Step outside onto the little patio and you'll find its most unique feature – an open air bathtub cum plunge pool, with an unadulterated view of nature. Up the stairs, on the second level, sits the snug four-poster bed, and a balcony overlooking the calm river below. The Bird's Nest truly is your home away from home. Please note, the plunge pool in the Bird's Nest, is not a jacuzzi and it has hot water facilities.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 21,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom11.jpg" alt="Room Image">
+                    <h3>The Stone Edge Room</h3>
+                    <p>Stone stone stone! Indulge yourselves in star gazing nights while the outdoor heated pool keeps you warm and cozy. Anchaviyo brings you the Stone Edge room with a splendid river view and a breathtaking sunrise spot. If you’re looking to engulf your being in leisure, don’t hesitate this decision.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 32,000 </strong>per night</p>
+                </div>
+                <div class="card">
+                    <img src="luxuryroom12.jpg" alt="Room Image">
+                    <h3>The NestIn Villa</h3>
+                    <p>Come visit our definition of an accommodation oozing individuality like no other. With an architectural masterclass offering 6 aesthetically-rich bedrooms, and an elegant blend of a living room, dining, and pool area, our Bungalow at Royal NestIn can comfortably house 12 to 15 people - while keeping the homely warmth intact. Every element, from the indulgent fixtures to the beautifully apportioned pool setup – sums up how we create travel experiences out of art, hospitality, and natural elements.</p>
+                    <button class="book-btn">Book Now</button>
+                    <p><small style="font-size:17px;font-weight: bold;" >INR</small><strong style="font-size:30px;"> 120,000 </strong>per night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
